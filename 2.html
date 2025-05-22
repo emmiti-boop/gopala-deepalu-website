@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Gopala Deepalu&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&amp;family=Cochin&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Custom styles for header */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(to right, #e0f7fa, #b2ebf2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Lora', serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #008000;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.header p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Lora', serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #004d40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Lora', serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #004d40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #008000;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.product-card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Cochin', serif; /* Product card text uses Cochin */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.product-card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #008000;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.product-card p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #004d40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.about-us h2, .contact-us h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #008000;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.footer{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #004d40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.home-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Cochin', serif; /* Apply Cochin font to the welcome heading */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #006400; /* Dark green color */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.home-subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Lora', serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #004d40;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Active navigation link style */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #008000; /* Darker green for active link */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #008000;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-gray-100 font-lora"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="header py-6 px-4 md:px-8 lg:px-12 border-b border-gray-200 shadow-md sticky top-0 z-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container mx-auto flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-2xl md:text-3xl font-semibold"&gt;Gopala Deepalu&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="hidden md:block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul class="flex space-x-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#home" class="nav-link transition duration-300"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#products" class="nav-link transition duration-300"&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#about" class="nav-link transition duration-300"&gt;About Us&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#contact" class="nav-link transition duration-300"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="hamburger-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle Navigation"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-white w-80 h-full absolute right-0 p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-end mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="close-menu-btn" class="text-gray-700 focus:outline-none" aria-label="Close Menu"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#home" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300"&gt;Home&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#products" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300"&gt;Products&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#about" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300"&gt;About Us&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;a href="#contact" class="block text-lg text-gray-700 hover:text-green-600 transition duration-300"&gt;Contact&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto py-8 px-4 md:px-8 lg:px-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="home" class="mb-16"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl md:text-4xl font-semibold home-title"&gt;Welcome to Gopala Deepalu&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-600 text-lg mb-4 home-subtitle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Saving Cows, Serving Tradition</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="font-family: 'Cochin', serif;" class="text-gray-700 text-lg mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Nestled on the sacred banks of the Godavari, our Gosala is a sanctuary of compassion, faith, and tradition. For over five decades, we have lovingly cared for our indigenous cows, cherishing them as part of our extended family. Every product we offer is a testament to this bond, crafted with devotion and a deep respect for nature's purity. When you choose Gopala Deepalu, you're not just acquiring a product; you're embracing a legacy of sustainability, well-being, and spiritual harmony. Join us in celebrating a way of life where every cow is revered, and every creation carries the blessings of an ancient, sacred tradition.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-center space-x-4 mb-6 flex-wrap gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/300x200/8BC34A/FFFFFF?text=Cow+1" alt="Gopala Deepalu Cow 1" class="rounded-lg shadow-md w-64 h-48 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/300x200/FFC107/FFFFFF?text=Cow+2" alt="Gopala Deepalu Cow 2" class="rounded-lg shadow-md w-64 h-48 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/300x200/B3E5FC/333333?text=Cow+3" alt="Gopala Deepalu Cow 3" class="rounded-lg shadow-md w-64 h-48 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="https://placehold.co/300x200/795548/FFFFFF?text=Cow+4" alt="Gopala Deepalu Cow 4" class="rounded-lg shadow-md w-64 h-48 object-cover"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="products" class="text-gray-600 text-lg mb-4 home-subtitle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl md:text-3xl font-semibold text-center mb-8"&gt;Our Products&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="product-listing" class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="product-detail" class="hidden space-y-6 bg-white rounded-xl shadow-lg p-6 md:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="back-button" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 ease-in-out flex items-center mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Back to Products</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div id="detail-content-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="about" class="text-gray-600 text-lg mb-4 home-subtitle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl md:text-3xl font-semibold text-center" style="font-family: 'Cochin', serif;"&gt;About Us&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="font-family: 'Cochin', serif;" class="text-gray-700 text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Our Gosala, cradled on the banks of the sacred Godavari, is a testament to our unwavering commitment to indigenous bovine care. For over five decades, we've dedicated ourselves to raising a healthy herd of over 40 cows, ensuring their well-being and happiness. Our mission extends beyond mere sustenance; we aim to foster a sustainable and spiritually enriching lifestyle by offering a range of pure cow-derived products. From fresh milk to traditional items like cow dung diyas, sambrani, and herbal soaps, each product embodies our reverence for nature and our cultural heritage.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="contact" class="text-gray-600 text-lg mb-4 home-subtitle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl md:text-3xl font-semibold text-center" style="font-family: 'Cochin', serif;"&gt;Contact Us&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-white rounded-lg shadow-md p-6 mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="font-family: 'Cochin', serif;" class="text-gray-700 text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Address:&lt;/strong&gt; Vonteddu Vari St, Seshayya Metta, Rajamahendravaram, Andhra Pradesh 533101&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;strong&gt;Phone:&lt;/strong&gt; 086881 00984</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="https://wa.me/918688100984" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Connect on WhatsApp</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="bg-gray-200 py-4 text-center footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;© 2024 Gopala Deepalu. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initial console log to check if script is running</p>
+<p class="p1"><span class="Apple-converted-space">        </span>console.log("Gopala Deepalu script loaded.");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Mobile menu functionality</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const hamburgerBtn = document.getElementById("hamburger-btn");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenu = document.getElementById("mobile-menu");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const closeMenuBtn = document.getElementById("close-menu-btn");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const mobileMenuLinks = mobileMenu.querySelectorAll("a");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const navLinks = document.querySelectorAll('.nav-link');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const sections = document.querySelectorAll('section');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function toggleMobileMenu() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenu.classList.toggle("hidden");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>hamburgerBtn.addEventListener("click", toggleMobileMenu);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>closeMenuBtn.addEventListener("click", toggleMobileMenu);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileMenuLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>link.addEventListener("click", toggleMobileMenu);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('click', (event) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (!mobileMenu.classList.contains('hidden') &amp;&amp; !mobileMenu.contains(event.target) &amp;&amp; event.target !== hamburgerBtn) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>toggleMobileMenu();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Active navigation link on scroll</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateActiveNavLink() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let currentSectionId = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>sections.forEach(section =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const sectionTop = section.offsetTop;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const sectionHeight = section.clientHeight;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Adjust scroll position for header height</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (window.scrollY &gt;= sectionTop - 150 &amp;&amp; window.scrollY &lt; sectionTop + sectionHeight - 150) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>currentSectionId = section.getAttribute('id');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>navLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>link.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (link.getAttribute('href').slice(1) === currentSectionId) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>link.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', updateActiveNavLink);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initial call to set active link on page load</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', updateActiveNavLink);</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Smooth scrolling for navigation links</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('a[href^="#"]').forEach(anchor =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>anchor.addEventListener('click', function (e) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>e.preventDefault();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const targetId = this.getAttribute('href').slice(1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const targetElement = document.getElementById(targetId);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (targetElement) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Adjust scroll position to account for fixed header</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const headerOffset = document.querySelector('header').offsetHeight;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const offsetPosition = elementPosition - headerOffset;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>window.scrollTo({</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>top: offsetPosition,</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>behavior: 'smooth'</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// HTML content for Panchagavya Deepalu specific detail page</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const panchagavyaDeepaluDetailHtml = `</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col lg:flex-row bg-white rounded-xl shadow-lg overflow-hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:w-1/2 p-4 md:p-8 flex items-center justify-center bg-gradient-to-br from-green-100 to-teal-100 rounded-l-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full h-64 md:h-96 lg:h-full bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-xl font-semibold overflow-hidden shadow-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="https://placehold.co/600x400/C6F6D5/047857?text=Panchagavya+Deepam" alt="Panchagavya Deepam Placeholder" class="object-cover w-full h-full rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="lg:w-1/2 p-6 md:p-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-2"&gt;Panchagavya Deepam - Traditional Lamp&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center mb-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-yellow-500 text-2xl"&gt;★★★★★&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-gray-600 ml-2" id="reviews-count"&gt;(4 reviews)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 text-lg mb-4"&gt;Total Diyas: &lt;span id="total-diyas"&gt;5&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-5xl font-extrabold text-green-700 mb-6"&gt;₹&lt;span id="product-price"&gt;15&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-500 text-sm mb-6"&gt;PRICES ARE INCLUSIVE OF ALL TAXES&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-green-100 p-4 rounded-lg shadow-inner mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold text-green-900 mb-3"&gt;Offers&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="list-disc list-inside text-gray-700 space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;FLAT 10% OFF on first purchase! Code: &lt;span class="font-semibold text-green-800"&gt;WELCOME10&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;FREE SHIPPING on orders ₹999 +&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;FREE SAMPLES in all orders&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label for="quantity" class="text-xl font-semibold text-gray-800 mr-4"&gt;Quantity (Packs):&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center border border-gray-400 rounded-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button id="decrement-quantity" class="px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-l-md text-2xl font-bold focus:outline-none"&gt;-&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;input type="number" id="quantity" name="quantity" value="1" min="1" class="w-16 text-center border-l border-r border-gray-400 py-2 text-xl font-semibold focus:outline-none"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button id="increment-quantity" class="px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-r-md text-2xl font-bold focus:outline-none"&gt;+&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="w-full bg-green-800 text-white py-4 px-8 rounded-full text-xl font-bold hover:bg-green-900 focus:outline-none focus:ring-4 focus:ring-green-600 transition duration-300 ease-in-out shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Add to Cart</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;hr class="my-8 border-gray-300"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl md:text-3xl font-bold text-green-800 mb-4"&gt;Product Description&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-6 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>పంచగవ్య దీపం అనేది కొన్ని హిందూ మతపరమైన పద్ధతుల్లో ఉపయోగించే సంప్రదాయ దీపం. "పంచగవ్య" అంటే "ఆవు యొక్క ఐదు ఉత్పత్తులు" అని అర్థం. ఈ ఐదు ఉత్పత్తులు: పాలు, పెరుగు, నెయ్యి, మూత్రం, మరియు ఆవు పేడ. పంచగవ్య మిశ్రమం శుద్ధి మరియు పవిత్రతను పెంచడంలో సహాయపడుతుంది. ఈ మిశ్రమాన్ని వివిధ ఆచారాల్లో ఉపయోగిస్తారు, శుద్ధి మరియు ఆశీర్వాదాల కోసం.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-6 leading-relaxed border-l-4 border-green-500 pl-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Panchagavya Deepam is a traditional lamp used in some Hindu religious practices. "Panchagavya" means "five products of the cow". These five products are: milk, curd, ghee, urine, and cow dung. Panchagavya mixture helps in purifying and increasing purity. This mixture is used in various rituals, for purification and blessings.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl md:text-3xl font-bold text-green-800 mb-4"&gt;How to use&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold text-green-800 mb-3"&gt;పంచగవ్య దీపాన్ని ఎలా ఉపయోగించాలి:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-6 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>గోమూత్రం, ఆవు పేడ, మరియు గంధంతో చేసిన మన దీపాన్ని ఉపయోగించండి. కొద్దిగా పాలు మరియు పెరుగును నెయ్యిలో కలిపి, పూజా స్థలంలో దీపాన్ని ఉంచి వెలిగించండి.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-6 leading-relaxed border-l-4 border-green-500 pl-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Use our lamp made of cow urine, cow dung, and sandalwood. Mix some milk and curd in ghee and light a lamp in the pooja place.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl md:text-3xl font-bold text-green-800 mb-4"&gt;After use&lt;/h3&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl font-semibold text-green-800 mb-3"&gt;పూజ అనంతరం:&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 mb-8 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>పూజా పూర్తయ్యాక, పంచగవ్య మిశ్రమాన్ని సగౌరవంగా తొలగించాలి. దీన్ని తోటలో పరిగణించవచ్చు, ఎందుకంటే ఇది మొక్కలకు ముడి పోషక పదార్థాలు కలిగి ఉంటుంది. ఈ మిశ్రమం మొక్కల కోసం అవసరమైన ప్రధాన (N, P, K), ద్వితీయ (Ca, Mg, S), మరియు సూక్ష్మ (Fe, Zn, Mn, B, etc.) పోషకాలు కలిగి ఉంటుంది. అదనంగా, ఇది మట్టిలో జీవసాహిత్యం జోడిస్తుంది, మట్టిలో జీవసాహిత్యమును పెంచుతుంది (కార్బన్ నిల్వ), మరియు మట్టిలో ఆరోగ్యాన్ని మెరుగుపరుస్తుంది.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-600 mb-8 leading-relaxed border-l-4 border-green-500 pl-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>After the pooja is over, the panchagavya mixture should be removed respectfully. It can be considered as fertilizer, as it contains raw nutrients for plants. This mixture contains major (N, P, K), secondary (Ca, Mg, S), and micro (Fe, Zn, Mn, B, etc.) nutrients required by plants. In addition, it adds organic matter to the soil, increases soil biomass (carbon storage), and improves soil health.</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;hr class="my-8 border-gray-300"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-2xl md:text-3xl font-bold text-green-800 mb-4"&gt;Customer Reviews&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="reviews-list" class="space-y-6 mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-gray-100 p-4 rounded-lg shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="font-semibold text-green-900"&gt;Reviewer 1&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-yellow-500 ml-3"&gt;★★★★★&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-700"&gt;"Excellent product! The deepams burn cleanly and have a pleasant, subtle aroma. Highly recommend for daily pooja."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-gray-100 p-4 rounded-lg shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="font-semibold text-green-900"&gt;Reviewer 2&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="text-yellow-500 ml-3"&gt;★★★★☆&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-700"&gt;"Good quality deepams. They last a decent time. Packaging was also good."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Generic product detail HTML template</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const genericProductDetailHtml = (product) =&gt; `</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row gap-8 mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 flex justify-center items-center bg-gray-100 rounded-lg overflow-hidden p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="${product.image}" alt="${product.name}" class="max-w-full h-auto rounded-lg shadow-sm object-contain max-h-96" onerror="this.onerror=null;this.src='https://placehold.co/400x400/CCCCCC/666666?text=Image+Error';"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="md:w-1/2 space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h2 class="text-3xl font-bold text-gray-900"&gt;${product.name}&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-2xl font-semibold text-blue-600"&gt;${product.price}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-700 leading-relaxed"&gt;${product.description}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Add to Cart</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Product data</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const products = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Cow Milk",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/8BC34A/FFFFFF?text=Cow+Milk",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Fresh and unadulterated cow milk, sourced directly from our healthy indigenous cows. Rich in nutrients and natural goodness, perfect for daily consumption and traditional recipes."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Ghee",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/FFC107/FFFFFF?text=Ghee",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "600/kg",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Pure and healthy Ghee, churned using traditional methods from the milk of our beloved cows. Known for its rich aroma, distinct flavor, and numerous health benefits in Ayurvedic traditions, only avaliable for eluru region."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 3,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Curd",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/B3E5FC/333333?text=Curd",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Traditional set curd, prepared fresh daily from our cow milk. A natural probiotic, it's an excellent addition to your diet for digestion and overall well-being."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 4,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Panchagavya Deepalu",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/795548/FFFFFF?text=Deepalu",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request", // Price will be handled by specific script</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Sacred Panchagavya Deepalu, crafted from indigenous cow dung and other natural ingredients. These traditional lamps are used for spiritual purification and creating a positive atmosphere during rituals and prayers.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>detailHtml: panchagavyaDeepaluDetailHtml // Reference to the specific HTML content</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 5,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Sambrani Cups",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/9C27B0/FFFFFF?text=Sambrani",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Natural fragrance sambrani cups, made from cow dung and aromatic herbs. Ideal for daily prayers, meditation, and purifying the air with a soothing and traditional aroma."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 6,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Cow Dung Cakes",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/4CAF50/FFFFFF?text=Dung+Cakes",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Pure cow dung cakes, sun-dried and perfect for havan, yagnas, and other sacred rituals. They burn cleanly, producing auspicious smoke believed to purify the environment."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 7,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Natural Soap",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/FFEB3B/333333?text=Soap",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Handcrafted natural soap, enriched with cow dung and beneficial herbs. Gentle on the skin, it offers a traditional cleansing experience with natural antiseptic properties."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 8,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Panchagavya",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/2196F3/FFFFFF?text=Panchagavya",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Authentic Panchagavya, a traditional Ayurvedic formulation for ritualistic and spiritual use. Prepared with five sacred cow products, it is believed to have purifying and healing properties."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 9,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Gomutra",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/CDDC39/333333?text=Gomutra",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Pure Gomutra (cow urine) for purification and spiritual purposes. Used in various traditional rituals and for its believed medicinal properties in Ayurveda."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 10,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Vermicompost",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/795548/FFFFFF?text=Compost",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "High-quality organic vermicompost, produced from cow dung using earthworms. An excellent natural fertilizer that enriches soil, promotes plant growth, and enhances crop yield."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 11,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Dhoop Sticks",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/607D8B/FFFFFF?text=Dhoop+Sticks",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Aromatic Dhoop Sticks, crafted from cow dung and a blend of natural herbs and resins. Perfect for creating a serene and spiritual ambiance during prayers and meditation."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 12,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Gift Hampers",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/FF9800/FFFFFF?text=Gift+Hampers",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Customized spiritual product hampers, featuring a selection of our finest cow-derived and traditional items. Ideal for gifting on auspicious occasions and festivals."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 13,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>name: "Holy Ash",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>image: "https://placehold.co/400x400/9E9E9E/FFFFFF?text=Holy+Ash",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>price: "Price on request",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>description: "Sacred Holy Ash (Vibhuti), prepared from purified cow dung. Used for spiritual markings on the forehead, symbolizing purity, knowledge, and devotion."</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const productListingSection = document.getElementById('product-listing');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const productDetailSection = document.getElementById('product-detail');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const productGrid = document.getElementById('product-grid');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const backButton = document.getElementById('back-button');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const detailContentContainer = document.getElementById('detail-content-container');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Function to initialize Panchagavya Deepalu specific JS</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function initPanchagavyaDeepaluScript() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const quantityInput = document.getElementById('quantity');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const incrementButton = document.getElementById('increment-quantity');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const decrementButton = document.getElementById('decrement-quantity');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const productPriceElement = document.getElementById('product-price');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const totalDiyasElement = document.getElementById('total-diyas');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const reviewsCountElement = document.getElementById('reviews-count');<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const basePricePerPack = 15; // Price for one pack</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const diyasPerPack = 5;<span class="Apple-converted-space">      </span>// Diyas in one pack</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>function updateProductDetails() {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let quantity = parseInt(quantityInput.value);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (isNaN(quantity) || quantity &lt; 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>quantity = 1;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>quantityInput.value = 1;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const totalPrice = basePricePerPack * quantity;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const totalDiyas = diyasPerPack * quantity;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>productPriceElement.textContent = totalPrice;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>totalDiyasElement.textContent = totalDiyas;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Initial update when the specific detail page loads</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateProductDetails();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Event listener for incrementing quantity</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (incrementButton) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>incrementButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>quantityInput.value = parseInt(quantityInput.value) + 1;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>updateProductDetails();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Event listener for decrementing quantity, ensuring it doesn't go below 1</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (decrementButton) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>decrementButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const currentValue = parseInt(quantityInput.value);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (currentValue &gt; 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>quantityInput.value = currentValue - 1;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>updateProductDetails();</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Event listener for direct input changes in quantity field</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (quantityInput) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>quantityInput.addEventListener('input', updateProductDetails);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Error in initPanchagavyaDeepaluScript:", error);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Function to render product cards</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderProductCards() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!productGrid) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>console.error("Error: product-grid element not found. Cannot render product cards.");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>productGrid.innerHTML = ''; // Clear existing cards</p>
+<p class="p1"><span class="Apple-converted-space">                </span>products.forEach(product =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const productCard = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>productCard.className = 'product-card bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer border border-gray-200';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>productCard.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x400/CCCCCC/666666?text=Image+Error';"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-lg font-semibold text-gray-800 truncate"&gt;${product.name}&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-xl font-bold text-blue-600 mt-1"&gt;${product.price}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="view-details-btn bg-green-800 hover:bg-green-900 text-white font-bold py-2 px-4 rounded transition duration-300 mt-4 w-full"&gt;View Details&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Attach event listener to the button inside the card</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const viewDetailsBtn = productCard.querySelector('.view-details-btn');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (viewDetailsBtn) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>viewDetailsBtn.addEventListener('click', () =&gt; showProductDetail(product.id));</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>console.warn(`View Details button not found for product: ${product.name}`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>productGrid.appendChild(productCard);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log("Product cards rendered successfully.");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Error in renderProductCards:", error);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Function to show product detail</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showProductDetail(productId) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const product = products.find(p =&gt; p.id === productId);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (product) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Clear previous content</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>detailContentContainer.innerHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (product.id === 4) { // Specific logic for Panchagavya Deepalu</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>detailContentContainer.innerHTML = product.detailHtml;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// Re-initialize the specific script for Panchagavya Deepalu after content is loaded</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>initPanchagavyaDeepaluScript();</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>console.log("Panchagavya Deepalu detail loaded.");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else { // Generic logic for other products</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>detailContentContainer.innerHTML = genericProductDetailHtml(product);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>console.log(`Generic detail loaded for product ID: ${productId}`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>productListingSection.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>productDetailSection.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>console.warn(`Product with ID ${productId} not found.`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Error in showProductDetail:", error);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Function to show product listing</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showProductListing() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>productDetailSection.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>productListingSection.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log("Switched to product listing view.");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Error in showProductListing:", error);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Event listener for back button</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (backButton) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>backButton.addEventListener('click', showProductListing);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>console.error("Back button element not found.");</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initial render of product cards when the page loads</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>try {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.log("DOMContentLoaded fired. Attempting to render content.");</p>
+<p class="p1"><span class="Apple-converted-space">                </span>renderProductCards();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateActiveNavLink(); // Ensure this is called after sections are rendered</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} catch (error) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("Error during DOMContentLoaded callback:", error);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
